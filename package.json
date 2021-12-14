@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --mode=development",
-    "build": "webpack --mode=production"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,9 @@
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.2.5",
+    "webpack-merge": "^5.8.0"
   }
 }

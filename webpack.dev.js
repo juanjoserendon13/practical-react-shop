@@ -22,6 +22,7 @@ module.exports = mergeWithRules({
   },
   devtool: 'inline-source-map',
   devServer: {
+    historyApiFallback: true,
     compress: true,
     port: 8080,
     static: './dist'

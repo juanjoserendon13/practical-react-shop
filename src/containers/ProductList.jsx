@@ -16,7 +16,6 @@ const ProductList = () => {
 					<ProductItem key={product.id} product={product} />
 				))}
 			</div>
-			{console.log(products)}
 		</section>
 	);
 }

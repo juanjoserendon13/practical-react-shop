@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/juanjoserendon13/practical-react-shop/issues"
   },
-  "homepage": "https://github.com/juanjoserendon13/practical-react-shop#readme",
+  "homepage": "https://juanjoserendon13.github.io/practical-react-shop/",
   "dependencies": {
     "@babel/runtime": "^7.16.7",
     "axios": "^0.24.0",

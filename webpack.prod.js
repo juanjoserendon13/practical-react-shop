@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const common = require('./webpack.common');
 
 module.exports = mergeWithRules({
+  output: 'prepend',
   module: {
     rules: {
       test: 'match',
@@ -12,6 +13,10 @@ module.exports = mergeWithRules({
   },
 })(common, {
   mode: 'production',
+  output: {
+    filename: '[name].bundle.js',
+    publicPath: '/practical-react-shop/'
+  },
   module: {
     rules: [
       {

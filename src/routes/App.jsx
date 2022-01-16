@@ -21,9 +21,12 @@ import '@styles/global.scss';
 
 const App = () => {
 	const initialState = useInitialState();
+	const baseNameRouter = process.env.NODE_ENV === 'development' 
+		? '/' 
+		: '/practical-react-shop';
 	return (
 		<AppContext.Provider value={initialState}>
-			<BrowserRouter>
+			<BrowserRouter basename={baseNameRouter}>
 				<Layout>
 					<Routes>
 						<Route path="/" element={<Home />} />
